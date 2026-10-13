@@ -1,0 +1,5 @@
+key,value,descripcion
+base_MVA,100,Potencia base del sistema
+ref_bus,5,Barra de referencia angular (theta=0)
+bigM,1.0,Constante big-M en radianes (Villasana 1984 usa M=1)
+theta_max,3.141592653589793,Cota de angulo para el MINLP (rad)

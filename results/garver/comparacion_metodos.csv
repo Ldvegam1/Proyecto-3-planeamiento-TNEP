@@ -1,0 +1,5 @@
+metodo,n_6-2,n_6-4,n_6-5,n_3-5,costo_pu,factible,tiempo_s,info
+LP Villasana-Garver (iterativo),4,2,0,1,1000.0,True,0.0103,8 LPs resueltos
+M(0-1)LP big-M,4,2,0,1,1000.0,True,0.023,"14 binarias, 54 var, 66 restr."
+MINLP bilineal,4,2,0,1,1000.0,True,0.0181,"4 enteras, 20 var, 24 restr."
+Fuerza bruta (validacion),4,2,0,1,1000.0,True,0.0447,enumeracion + flujo DC

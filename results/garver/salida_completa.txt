@@ -1,0 +1,198 @@
+
+==============================================================================
+MODELO LP INTERACTIVO DE VILLASANA-GARVER  -  caso 'garver'
+==============================================================================
+Restricted license - for non-production use only - expires 2027-11-29
+
+--- Iteracion 1 ---
+  Lineas instaladas hasta ahora: 6-2:0, 6-4:0, 6-5:0, 3-5:0
+  theta (rad) = [0.158 0.272 0.200 0.637 0.000 0.000]
+  P+_D (pu)   = [2.1375 3.3125 0.0000 0.6125]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 878.7500
+  Corredor mas necesario: 6-4 (P_D = 3.3125 pu = 331.25 MW) -> se agrega 1 linea (total en el corredor: 1)
+
+--- Iteracion 2 ---
+  Lineas instaladas hasta ahora: 6-2:0, 6-4:1, 6-5:0, 3-5:0
+  theta (rad) = [0.158 0.272 0.200 0.637 0.000 0.938]
+  P+_D (pu)   = [2.1375 2.3125 0.0000 0.6125]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 728.7500
+  Corredor mas necesario: 6-4 (P_D = 2.3125 pu = 231.25 MW) -> se agrega 1 linea (total en el corredor: 2)
+
+--- Iteracion 3 ---
+  Lineas instaladas hasta ahora: 6-2:0, 6-4:2, 6-5:0, 3-5:0
+  theta (rad) = [0.158 0.272 0.200 0.637 0.000 0.938]
+  P+_D (pu)   = [2.1375 1.3125 0.0000 0.6125]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 578.7500
+  Corredor mas necesario: 6-2 (P_D = 2.1375 pu = 213.75 MW) -> se agrega 1 linea (total en el corredor: 1)
+
+--- Iteracion 4 ---
+  Lineas instaladas hasta ahora: 6-2:1, 6-4:2, 6-5:0, 3-5:0
+  theta (rad) = [0.113 0.317 0.200 0.323 0.000 0.617]
+  P+_D (pu)   = [2.4860 0.0000 0.0000 0.8372]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 456.6250
+  Corredor mas necesario: 6-2 (P_D = 2.4860 pu = 248.60 MW) -> se agrega 1 linea (total en el corredor: 2)
+
+--- Iteracion 5 ---
+  Lineas instaladas hasta ahora: 6-2:2, 6-4:2, 6-5:0, 3-5:0
+  theta (rad) = [0.113 0.317 0.200 0.323 0.000 0.617]
+  P+_D (pu)   = [1.4860 0.0000 0.0000 0.8372]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 306.6250
+  Corredor mas necesario: 6-2 (P_D = 1.4860 pu = 148.60 MW) -> se agrega 1 linea (total en el corredor: 3)
+
+--- Iteracion 6 ---
+  Lineas instaladas hasta ahora: 6-2:3, 6-4:2, 6-5:0, 3-5:0
+  theta (rad) = [0.113 0.317 0.200 0.323 0.000 0.617]
+  P+_D (pu)   = [0.4860 0.0000 0.0000 0.8372]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 156.6250
+  Corredor mas necesario: 3-5 (P_D = 0.8372 pu = 83.72 MW) -> se agrega 1 linea (total en el corredor: 1)
+
+--- Iteracion 7 ---
+  Lineas instaladas hasta ahora: 6-2:3, 6-4:2, 6-5:0, 3-5:1
+  theta (rad) = [0.108 0.308 0.186 0.314 0.000 0.608]
+  P+_D (pu)   = [0.4916 0.0000 0.0000 0.0000]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 73.7473
+  Corredor mas necesario: 6-2 (P_D = 0.4916 pu = 49.16 MW) -> se agrega 1 linea (total en el corredor: 4)
+
+--- Iteracion 8 ---
+  Lineas instaladas hasta ahora: 6-2:4, 6-4:2, 6-5:0, 3-5:1
+  theta (rad) = [0.106 0.311 0.187 0.296 0.000 0.579]
+  P+_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  P-_D (pu)   = [0.0000 0.0000 0.0000 0.0000]
+  Funcion objetivo = 0.0000
+  Ya no hay congestion en los corredores -> OPTIMO alcanzado.
+
+==============================================================================
+RESULTADO FINAL - LP VILLASANA-GARVER
+==============================================================================
+Corredor    Lineas nuevas  Costo unit.     Costo
+6-2                     4          150       600
+6-4                     2          150       300
+6-5                     0          305         0
+3-5                     1          100       100
+TOTAL                   7                   1000  pu
+
+Angulos de barra (rad):  th1=0.106  th2=0.311  th3=0.187  th4=0.296  th5=0.000  th6=0.579
+Rama            Flujo MW   Cap. MW   Carga %
+L 1-2             -51.25       100      51.3
+L 1-4             -31.75        80      39.7
+L 1-5              53.00       100      53.0
+L 2-3              62.00       100      62.0
+L 2-4               3.63       100       3.6
+L 3-5              93.50       100      93.5
+C 6-2 (x4)        356.88       400      89.2
+C 6-4 (x2)        188.12       200      94.1
+C 3-5 (x1)         93.50       100      93.5
+
+Verificacion flujo DC: FACTIBLE
+
+==============================================================================
+MODELO M(0-1)LP BIG-M DE VILLASANA  -  caso 'garver'  (M = 1.0 rad)
+==============================================================================
+Variables binarias activas:
+  w_624 = 1   (4 linea(s) en el corredor 6-2)
+  w_642 = 1   (2 linea(s) en el corredor 6-4)
+  w_351 = 1   (1 linea(s) en el corredor 3-5)
+
+Costo total de la expansion = 1000.00 pu   (gap = 0.00e+00, nodos B&B = 1, tiempo = 0.021 s)
+Angulos theta (rad): th1=0.106  th2=0.311  th3=0.187  th4=0.296  th5=0.000  th6=0.579
+Angulos auxiliares dtheta_ijk (rad):
+  dth621=0.000  dth622=0.000  dth623=0.000  dth624=0.268  dth641=0.000  dth642=0.282  dth643=0.000  dth644=0.000  dth651=0.000  dth652=0.000  dth653=0.000  dth351=0.187  dth352=0.000  dth353=0.000
+
+==============================================================================
+RESULTADO FINAL - M(0-1)LP BIG-M
+==============================================================================
+Corredor    Lineas nuevas  Costo unit.     Costo
+6-2                     4          150       600
+6-4                     2          150       300
+6-5                     0          305         0
+3-5                     1          100       100
+TOTAL                   7                   1000  pu
+
+Angulos de barra (rad):  th1=0.106  th2=0.311  th3=0.187  th4=0.296  th5=0.000  th6=0.579
+Rama            Flujo MW   Cap. MW   Carga %
+L 1-2             -51.25       100      51.3
+L 1-4             -31.75        80      39.7
+L 1-5              53.00       100      53.0
+L 2-3              62.00       100      62.0
+L 2-4               3.63       100       3.6
+L 3-5              93.50       100      93.5
+C 6-2 (x4)        356.88       400      89.2
+C 6-4 (x2)        188.12       200      94.1
+C 3-5 (x1)         93.50       100      93.5
+
+Verificacion flujo DC (theta = B^-1 (PG-PL)): FACTIBLE
+
+==============================================================================
+MODELO MINLP BILINEAL  -  caso 'garver'  (|theta| <= 3.1416 rad)
+==============================================================================
+Solucion entera: n_62 = 4,  n_64 = 2,  n_65 = 0,  n_35 = 1
+Costo total de la expansion = 1000.00 pu   (gap = 0.00e+00, nodos B&B = 5, tiempo = 0.014 s)
+theta (rad) = [0.106 0.311 0.187 0.296 0.000 0.579]
+
+==============================================================================
+RESULTADO FINAL - MINLP
+==============================================================================
+Corredor    Lineas nuevas  Costo unit.     Costo
+6-2                     4          150       600
+6-4                     2          150       300
+6-5                     0          305         0
+3-5                     1          100       100
+TOTAL                   7                   1000  pu
+
+Angulos de barra (rad):  th1=0.106  th2=0.311  th3=0.187  th4=0.296  th5=0.000  th6=0.579
+Rama            Flujo MW   Cap. MW   Carga %
+L 1-2             -51.25       100      51.3
+L 1-4             -31.75        80      39.7
+L 1-5              53.00       100      53.0
+L 2-3              62.00       100      62.0
+L 2-4               3.63       100       3.6
+L 3-5              93.50       100      93.5
+C 6-2 (x4)        356.88       400      89.2
+C 6-4 (x2)        188.12       200      94.1
+C 3-5 (x1)         93.50       100      93.5
+
+Verificacion flujo DC: FACTIBLE
+
+==============================================================================
+VALIDACION POR FUERZA BRUTA  -  caso 'garver'  (400 combinaciones)
+==============================================================================
+Combinaciones factibles: 82 de 400
+
+Combinaciones con el costo minimo factible (1000 pu):
+ Fila  Combinacion    Costo  Estado
+  226  2401            1000  INFACTIBLE: Corredor 6-2 (2 lineas): 274.15 MW > 200 MW
+  290  3301            1000  INFACTIBLE: Corredor 6-2 (3 lineas): 317.81 MW > 300 MW
+  354  4201            1000  FACTIBLE
+
+Las 5 mejores combinaciones factibles:
+  fila  354  n62=4  n64=2  n65=0  n35=1   costo = 1000
+  fila  355  n62=4  n64=2  n65=0  n35=2   costo = 1100
+  fila  370  n62=4  n64=3  n65=0  n35=1   costo = 1150
+  fila  278  n62=3  n64=2  n65=1  n35=1   costo = 1155
+  fila  356  n62=4  n64=2  n65=0  n35=3   costo = 1200
+
+Optimo por fuerza bruta:
+Corredor    Lineas nuevas  Costo unit.     Costo
+6-2                     4          150       600
+6-4                     2          150       300
+6-5                     0          305         0
+3-5                     1          100       100
+TOTAL                   7                   1000  pu
+
+==============================================================================
+COMPARACION DE METODOS
+==============================================================================
+Metodo                             6-2   6-4   6-5   3-5   Costo  Factible   t [s]
+LP Villasana-Garver (iterativo)      4     2     0     1    1000        si   0.010   8 LPs resueltos
+M(0-1)LP big-M                       4     2     0     1    1000        si   0.023   14 binarias, 54 var, 66 restr.
+MINLP bilineal                       4     2     0     1    1000        si   0.018   4 enteras, 20 var, 24 restr.
+Fuerza bruta (validacion)            4     2     0     1    1000        si   0.045   enumeracion + flujo DC
+
+Resumen guardado en /home/claude/TNEP_Gurobi/results/garver/comparacion_metodos.csv
